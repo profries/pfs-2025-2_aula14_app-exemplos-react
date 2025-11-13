@@ -2,6 +2,8 @@ import Card from "./components/Card"
 import Contador from "./components/Contador"
 import Hello from "./components/Hello"
 import ListCards from "./components/ListCards"
+import TabelaProdutos from "./components/TabelaProdutos";
+import listaLivros from "./data/livros.json";
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
         <p>Descrição: Meu produto é demais!</p>
       </Card>
       <ListCards></ListCards>
+      <TabelaProdutos lista={listaLivros}></TabelaProdutos>
     </>
   )
 }
